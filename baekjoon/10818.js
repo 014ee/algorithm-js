@@ -19,8 +19,7 @@ console.log(min, max)
 const fs = require('fs');
 const input = fs.readFileSync('/dev/stdin').toString().split('\n');
 const count = Number(input[0]);
-const num = input[1].split(' ');
-num.sort((a,b) => a - b)
+const num = input[1].split(' ').sort((a,b) => a - b)
 
 const min = num[0]
 const max = num[num.length-1]
