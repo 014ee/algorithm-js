@@ -18,6 +18,7 @@ rl.on('line', function(line) {
 }).on('close', function() {
   // 콘솔 입력 창에서 Ctrl + C 혹은 Ctrl + D를 입력하면 호출(입력의 종료)
   // ↓ 알고리즘 작성 영역
+
   console.log(input);
   process.exit();
 });
