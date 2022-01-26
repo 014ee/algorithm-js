@@ -13,7 +13,6 @@ function solution (num){
   return sum
 }
   
-  
 for(let i = 1; i <= 10000; i++){
   solution(i);
   
