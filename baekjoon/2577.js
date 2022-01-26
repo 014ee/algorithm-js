@@ -1,4 +1,24 @@
-// 좀 무식하게 푼 듯;;
+const fs = require('fs');
+const input = fs.readFileSync('./input.txt').toString().split('\n');
+const a = input[0]
+const b = input[1]
+const c = input[2]
+let sum = a * b * c
+
+let counter = new Array(10).fill(0)
+
+do{
+  const num = sum % 10
+  counter[num] ++
+  sum = parseInt(sum / 10)
+}while(sum > 0)
+
+for(let i=0; i<counter.length; i++){
+  console.log(counter[i])
+}
+
+
+// 좀 무식하게 푼 것 같아서 위와 같이 다시 작성함 (메모리/시간은 거의 차이 없는데, 아래 방법이 덜 사용되긴 했음)
 const fs = require('fs');
 const input = fs.readFileSync('/dev/stdin').toString().split('\n');
 const a = input[0]
