@@ -1,6 +1,5 @@
 const fs = require('fs');
-const input = fs.readFileSync('/dev/stdin').toString();
-input = Number(input);
+const input = Number(fs.readFileSync('/dev/stdin').toString());
 
 function solution(N) {
   const hansu = new Array(99).fill(0)
