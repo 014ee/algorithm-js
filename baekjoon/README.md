@@ -1,7 +1,7 @@
 ## 백준 코딩테스트 정답 제출 양식
 ```js
 const fs = require('fs');
-cpmst input = fs.readFileSync('/dev/stdin').toString().split('\n');
+const input = fs.readFileSync('/dev/stdin').toString().split('\n');
 const a = Number(input[0]);
 const b = Number(input[1]);
 ```
