@@ -1,9 +1,9 @@
 ## 백준 코딩테스트 정답 제출 양식
 ```js
-var fs = require('fs');
-var input = fs.readFileSync('/dev/stdin').toString().split('\n');
-var a = parseInt(input[0]);
-var b = parseInt(input[1]);
+const fs = require('fs');
+cpmst input = fs.readFileSync('/dev/stdin').toString().split('\n');
+const a = Number(input[0]);
+const b = Number(input[1]);
 ```
 ```js
 const rl = require('readline').createInterface({
