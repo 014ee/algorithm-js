@@ -18,7 +18,8 @@ for(let i=0; i<counter.length; i++){
 }
 
 
-// 좀 무식하게 푼 것 같아서 위와 같이 다시 작성함 (메모리/시간은 거의 차이 없는데, 아래 방법이 덜 사용되긴 했음)
+// 좀 무식하게 푼 것 같아서 위와 같이 다시 작성함
+// 메모리랑 시간은 거의 차이 없는데, 아래 방법이 덜 사용되긴 했음
 const fs = require('fs');
 const input = fs.readFileSync('/dev/stdin').toString().split('\n');
 const a = input[0]
