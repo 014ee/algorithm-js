@@ -2,7 +2,6 @@ var fs = require('fs');
 var input = fs.readFileSync('/dev/stdin').toString().split('\n');
 var a = parseInt(input[0]);
 
-
 function solution(N) {
   const hansu = new Array(99).fill(0)
   let result
